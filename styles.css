@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: #023436;
+    font-family: 'poppins',sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #ffffff;
+}
+body > .global-container-header1{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.global3items{
+    padding: 0 5px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    justify-content: space-evenly;
+}
+.global3items i{
+    font-size: 2rem;
+    color: #00bfb3;
+}
+.global-social-media i{
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 1s;
+}
+.global-social-media i:hover{
+    transform: scale(1.2);
+}
+#fb{
+    color: rgb(24, 119, 242);
+    border-radius: 25px;
+}
+#insta{
+    color: #ee2a7b;
+}
+
+.adress-contact-info,.phone-contact-info,.mail-contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.adress-contact-info i,.phone-contact-info i,.mail-contact-info i{
+    margin-right: 10px;
+}
+.global-social-media{
+    margin-right: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.39);
+}
+.logo-container{
+    padding-left: 20px;
+    width: 10%;
+    height: 100%;
+}
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 5px;
+}
+.menu_list li{
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+.menu_list a{
+    text-decoration: none;
+    color: #023436;
+    font-weight: 500;
+}
+.menu_list li:hover{
+    background-color: #00bfb225;
+
+}
+/* dropdown menu */
+.sub-ul{
+    display: none;
+    position: absolute;
+    top: 92px;
+    background-color: #fafafa;
+    border-top: 4px solid #16425B;
+    list-style: none;
+    padding: 5px;
+    width: 120px;
+    border-radius: 0px 0px 2px 2px;
+}
+.sub-ul li{
+    cursor: pointer;
+    padding: 6px 4px;
+    align-items: center;
+    border-radius: 0px; 
+}
+.sub-ul li:hover,.sub-ul li:hover{
+    font-weight: 600;
+    background-color: #7e807f1f;
+    border-radius: 0px;
+}
+.sub-ul li a{
+    text-decoration: none;
+    color: #023436;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.active-sub-ul:hover .sub-ul{
+    display: block;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+.search-container span{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    width: 70%;
+}
+.search-container input{
+    width: 100%;
+    font-family: 'poppins',sans-serif;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.search-container i{
+    font-size: 1.9rem;
+    color: black;
+}
+.panier-shop i{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #023436;
+}
+.panier-shop i:hover{
+    color: #EE8434;
+}
+/*background image */
+.background{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+.background img{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.title h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.container-product{
+    background-color: #ffffff;
+    margin: 0 5%;
+    padding: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+
+}
+.container-product-global{
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    width: 270px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.container-product-global:hover{
+    box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
+}
+.container-product-global > .product-image{
+    width: 270px;
+    height: 250px;
+}
+.container-product-global > .product-image img{
+    width: 100%;
+    height: 100%;
+}
+.container-product-global > .info-product{
+    
+    text-align: center;
+}
+.container-product-global > .info-product >.inline2elemnt{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+    gap: 5px;
+}
+#price-color{
+    color: #EE8434;
+}
+#old-price{
+    font-size: 1.2rem;
+}
+.button-commande{
+    
+    display: none;
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+.button-commande button{
+    background-color: #EE8434;
+    
+    border: none;
+    padding: 10px;
+    width: 230px;
+    height: 36px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'poppins';
+}
+.container-product-global:hover .button-commande{
+    display: block; 
+}
+
+.discount-onsale{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 100px;
+    background-color: rgb(248,49,49);
+    width: 48px;
+    height: 48px;
+}
+.discount-onsale h5{
+    font-size: 1.2rem;
+    color: white;
+}
+footer{
+    background-color: #0A0A0A;
+    height: 320px;
+    width: 100%;
+    padding: 1% 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.global-localisation{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-info h1{
+    color: #00CE11;
+    font-weight: 400;
+}
+.contact-info span{
+    color: white;
+    font-size: 1.5rem;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 0.116);
+    border-radius: 5px;
+}
+.icon i{
+    font-size: 3rem;
+    color: #EE8434;
+}
+.info h1{
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.info h2{
+    color:#EE8434 ;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.email-newsletter-input{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
+}
+.email-newsletter-input span{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+.email-newsletter-input span:hover{
+    border: 1px solid #ee8434;
+}
+.email-newsletter-input input{
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 80%;
+    background-color: transparent;
+    
+}
+.email-newsletter-input button{
+
+    width: 45px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #EE8434;
+    border: none;
+    font-family: 'poppins',sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.checkbox{
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.email-newsletter-input .checkbox input{
+    width: 14px;
+}
+.checkbox label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.social-media-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    color: white;
+}
+.social-media-flex i{
+    font-size: 3rem;
+}
+.condition{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-info .condition a{
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #EE8434;
+    font-size: 1.6rem;
+}
+.contact-info a:hover,.contact-info h2:hover{
+    color: #EAC435;
+    
+}
+.contact-info:hover{
+    cursor: pointer;
+}
+.dev-info{
+    display: flex;
+    padding: 5px 5%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 30px;
+    color: white;
+    background-color: #242424f3;
+}
+.dev-info h3{
+    font-weight: 500;
+}

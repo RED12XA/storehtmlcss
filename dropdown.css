@@ -1,0 +1,10 @@
+#burger:checked + .show-on-click{
+    display: block;
+
+}
+.hidden{
+    display: none;
+}
+.show-on-click{
+    display: none;
+}

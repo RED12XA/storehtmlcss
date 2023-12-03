@@ -1,0 +1,13 @@
+
+selector{
+    animation: name-animation 1second repeat;
+}
+
+@keyframes name-animation{
+    0%{
+        begin-effects
+    }
+    100%{
+        finish-effects
+    }
+}
