@@ -37,8 +37,9 @@ body > .global-container-header1{
     font-size: 2rem;
     transition: 1s;
 }
-.global-social-media i:hover{
-    transform: scale(1.2);
+.global-social-media i:hover,.social-media-flex i:hover{
+    transform: scale(1.4);
+    transition: 0.9s;
 }
 #fb{
     color: rgb(24, 119, 242);
@@ -99,6 +100,7 @@ header{
 }
 .menu_list li:hover{
     background-color: #00bfb225;
+    transition: 0.9s;
 
 }
 /* dropdown menu */
@@ -106,7 +108,7 @@ header{
     display: none;
     position: absolute;
     top: 92px;
-    background-color: #fafafa;
+    background-color: #fafafaf3;
     border-top: 4px solid #16425B;
     list-style: none;
     padding: 5px;
@@ -119,10 +121,9 @@ header{
     align-items: center;
     border-radius: 0px; 
 }
-.sub-ul li:hover,.sub-ul li:hover{
+.sub-ul li:hover{
     font-weight: 600;
-    background-color: #7e807f1f;
-    border-radius: 0px;
+    background-color: #7e807f77;
 }
 .sub-ul li a{
     text-decoration: none;
@@ -134,6 +135,7 @@ header{
     display: block;
 }
 .search-container{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -144,9 +146,20 @@ header{
     align-items: center;
     padding: 10px;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.158);
-    width: 70%;
+    border: 1.5px solid rgba(0, 0, 0, 0.158);
+    width: 57%;
 }
+.search-container span:hover{
+    border: 1.5px solid #EE8434;
+    width: 65%;
+    transition: 0.5s ease-in-out;
+}
+
+.search-container span:hover i{
+    color: #e0792a;
+    transition: 0.5s;
+}
+
 .search-container input{
     width: 100%;
     font-family: 'poppins',sans-serif;
@@ -156,6 +169,10 @@ header{
     background: transparent;
     outline: none;
     border: none;
+}
+.panier-shop{
+    position: absolute;
+    left: 75%;
 }
 .search-container i{
     font-size: 1.9rem;
@@ -206,12 +223,12 @@ header{
     width: 270px;
     height: 370px;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .container-product-global:hover{
-    box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
-    -webkit-box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
-    -moz-box-shadow: -1px 2px 16px 1px rgba(0,0,0,0.16);
+    box-shadow: -1px 2px 16px 1px rgba(0, 0, 0, 0.904);
+    -webkit-box-shadow: -1px 2px 16px 1px rgba(0, 0, 0, 0.205);
+    -moz-box-shadow: -1px 2px 16px 1px rgba(0, 0, 0, 0.164);
 }
 .container-product-global > .product-image{
     width: 270px;
@@ -247,7 +264,6 @@ header{
 }
 .button-commande button{
     background-color: #EE8434;
-    
     border: none;
     padding: 10px;
     width: 230px;
@@ -258,6 +274,10 @@ header{
 }
 .container-product-global:hover .button-commande{
     display: block; 
+}
+.button-commande button:hover{
+    cursor: pointer;
+    background-color: #e0792a;
 }
 
 .discount-onsale{
@@ -300,11 +320,11 @@ footer{
 }
 
 .contact-info h1{
-    color: #00CE11;
+    color: #FFFFFF;
     font-weight: 400;
 }
 .contact-info span{
-    color: white;
+    color: #cad8dece;
     font-size: 1.5rem;
 
 }
@@ -314,8 +334,9 @@ footer{
     align-items: center;
     width: 36px;
     height: 36px;
-    border: 2px solid rgba(255, 255, 255, 0.116);
-    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+    padding: 1px;
+    border-radius: 2px;
 }
 .icon i{
     font-size: 3rem;
@@ -336,6 +357,7 @@ footer{
     flex-direction: column;
     width: 350px;
     gap: 10px;
+
 }
 .email-newsletter-input span{
     display: flex;
@@ -346,21 +368,25 @@ footer{
     border: 1px solid #000000;
 }
 .email-newsletter-input span:hover{
-    border: 1px solid #ee8434;
+    border-bottom: 1px solid #eb7419;
+    border-radius: 30px;
 }
+
 .email-newsletter-input input{
     font-size: 1.5rem;
     color: white;
+    font-weight: 500;
+    font-family: 'poppins';
     border: none;
     outline: none;
     padding: 5px;
     width: 80%;
     background-color: transparent;
-    
 }
-.email-newsletter-input button{
 
-    width: 45px;
+.email-newsletter-input button{
+    cursor: pointer;
+    width: 15%;
     height: 100%;
     border-radius: 10px;
     background-color: #EE8434;
@@ -376,13 +402,19 @@ footer{
     justify-content: flex-start;
     gap: 10px;
 }
+
 .email-newsletter-input .checkbox input{
     width: 14px;
 }
 .checkbox label{
     font-size: 1.5rem;
     font-weight: 500;
+    color: #da5452c5;
 }
+.checkbox input:checked + label{
+    color: #96f175c9;
+}
+
 .social-media-flex{
     display: flex;
     justify-content: flex-start;
@@ -406,8 +438,7 @@ footer{
     font-size: 1.6rem;
 }
 .contact-info a:hover,.contact-info h2:hover{
-    color: #EAC435;
-    
+    color: #c1d0df;
 }
 .contact-info:hover{
     cursor: pointer;
@@ -425,3 +456,94 @@ footer{
 .dev-info h3{
     font-weight: 500;
 }
+.email-newsletter-input button:hover{
+    background-color: #b3560e;
+}
+
+
+/*** SELECTED CHANGE BACKGROUND **/
+#selected1{
+    background-color:#00bfb25e;
+}
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+}
+/*** CONTACT PAGE **/
+.global-info-contact-flex{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.flex1{
+    width: 50%;
+    padding: 10px 25px;
+}
+.flex1 span{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.flex1 p{
+    letter-spacing: 1.5px;
+    font-size: 1.7rem;
+    
+}
+.flex1 h5{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.flex1 h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.maps-contact{
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+.maps-contact h5{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.iframe-maps{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding:  25px 0;
+    height: 550px;
+}
+.iframe-maps iframe{
+    width: 80%;
+    height: 100%;
+}
+
+/** brands style hp dell lenovo .... **/ 
+.container-option{
+    margin: 0 10%;
+}
+.global2option{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+.option select{
+    height: 30px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 2px;
+    font-family: 'poppins';
+    padding: 1px 1px;
+    font-size: 1.5rem;
+}
+.option option{
+        font-size: 1.5rem;
+}
+.global2option span{
+    font-size: 2rem;
+    line-height: 15px;
+}
+.global2option{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+}
+

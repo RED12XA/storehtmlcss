@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mobile-screen.css" media="(max-width: 600px)" />
+    <link rel="stylesheet" href="animation.css"/>
+    <link rel="stylesheet" href="contact.css" />
+
 </head>
 <body>
     <div class="global-container-header1">   
@@ -31,7 +34,7 @@
     </div> 
 <header>
     <div class="logo-container">
-        <img src="logo.png" alt="logo store">
+        <img src="imgs/logo.png" alt="logo store">
     </div>
     <div class="nav-container">
         <nav>
@@ -40,26 +43,153 @@
                 <li class="active-sub-ul"><a href="#">Pc portable</a>
                     <i class='bx bx-chevron-down'></i>
                 <ul class="sub-ul">
-                    <li><a href="#">Dell</a>
-                    <li><a href="#">Hp</a>
-                    <li><a href="#">Asus</a>
+                    <li><a href="dell.html">Dell</a>
+                    <li><a href="hp.html">Hp</a>
+                    <li><a href="asus.html">Asus</a>
                 </ul>
                 </li>
-                <li><a href="#">Dell</a></li>
-                <li><a href="#">Hp</a></li>
-                <li><a href="#">Lenovo</a></li>
-                <li><a href="#">Pc bureau</a></li>
-                <li><a href="#">Boutique</a></li>
-                <li><a href="#">Accesoires</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="dell.html">Dell</a></li>
+                <li><a href="hp.html">Hp</a></li>
+                <li><a href="asus.html">Lenovo</a></li>
+                <li><a href="pcbureaux.html">Pc bureau</a></li>
+                <li><a href="store.html">Boutique</a></li>
+                <li><a href="accesoire.html">Accesoires</a></li>
+                <li id="selected1"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
     <div class="search-container">
         <span>
             <i class='bx bx-search-alt-2'></i>
-            <input type="text" placeholder="Search here for anything...">
+            <input type="text" placeholder="Rechercher des produits...">
         </span>
+        <div class="panier-shop">
+            <i class='bx bxs-cart'></i>
+        </div>
         
     </div>
 </header>
+
+<section>
+    <div class="global-info-contact-flex">
+        <div class="flex1">
+            <span id="title">Qui Somme Nous :</span>
+            <p>Lorem ipsum dolor sit amet.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consectetur, dolore hic minus culpa accusamus nulla, inventore odit aliquid tempora maiores saepe quam deserunt dolores deleniti. Quo expedita amet cum.</p>
+        </div>
+        <div class="flex1">
+            <span>Contactez-nous</span>
+            <h5>Adress :</h5>
+            <h3>N12 RESIDENSE FATH AYT BAHA MEKNES</h3>
+            <h5>Numero</h5>
+            <h3>06 38 99 46 18 </h3>
+            <h5>Email</h5>
+            <h3>Store21@store21.com</h3>
+        </div>
+    </div>
+
+</section>
+
+<div class="maps-contact">
+    <h5>Notre Localisation</h5>   
+</div>
+<div class="iframe-maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d106351.26158693698!2d-7.517585!3d33.592928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cb6e713aa063%3A0xe7dee5e7a99ae160!2sJAWHARA%20PHONE%20MARKET%20&#39;JPM%20&#39;!5e0!3m2!1sfr!2sus!4v1701579719459!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="flex">
+    <div class="contact-info">
+        <h1>Contact Info</h1>
+        <span>N'hesitez pas a nous contacter :</span>
+        <div class="global-localisation">
+            <div class="icon">
+                <i class='bx bx-map' ></i>
+            </div>
+            <div class="info">
+                <h1>Localisation</h1>
+                <h2>N12 HAY RIYADI ZITOUNI - MEKNES MAROC</h2>
+            </div>
+
+        </div>
+
+        <div class="global-localisation">
+            <div class="icon">
+                <i class='bx bx-phone-call' ></i>
+            </div>
+            <div class="info">
+                <h1>Tél</h1>
+                <h2>+212 6 38 994 618</h2>
+            </div>
+
+        </div>
+
+        <div class="global-localisation">
+            <div class="icon">
+                <i class='bx bx-mobile-alt'></i>
+            </div>
+            <div class="info">
+                <h1>Whatsapp</h1>
+                <h2>+212 6 38 994 618</h2>
+            </div>
+
+        </div>
+
+        <div class="global-localisation">
+            <div class="icon">
+                <i class='bx bx-envelope' ></i>
+            </div>
+            <div class="info">
+                <h1>Email</h1>
+                <h2>contact@store21.com</h2>
+            </div>
+
+        </div>
+
+        <div class="global-localisation">
+            <div class="icon">
+                <i class='bx bx-link' ></i>
+            </div>
+            <div class="info">
+                <h2>www.store21.com</h2>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-info">
+        <h1>Newsletter</h1>
+        <span>Recevez toutes les offres les plus récentes par Email.</span>
+        <div class="email-newsletter-input">
+            <span>
+            <input type="email" placeholder="Your Email">
+            <button type="submit">GO</button>
+        </span>
+        <div class="checkbox">
+            <input type="checkbox" value="true" id="approve">
+            <label for="approve">Accepter les termes RGPD</label>
+        </div>
+
+        </div>
+        <h1>Follow US</h1>
+        <div class="social-media-flex">
+            <i class='bx bxl-facebook-square' ></i>
+            <i class='bx bxl-instagram-alt' ></i>
+            <i class='bx bxl-youtube' ></i>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h1>Condition</h1>
+        <div class="condition">
+            <a href="#">Conditions Generals</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="">Livraison</a>
+        </div>
+
+</footer>
+<div class="dev-info">
+    <h3>Développé par : ESSBAYI Rida</h3>
+</div>
+
+
+
+</body>
+</html>
