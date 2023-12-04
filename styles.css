@@ -72,13 +72,24 @@ header{
     border-top: 1px solid rgba(0, 0, 0, 0.39);
 }
 .logo-container{
-    padding-left: 20px;
     width: 10%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
 }
-.logo-container img{
-    width: 100%;
-    height: 100%;
+.logo-container span{
+    font-size: 1.7rem;
+    line-height: 30px;
+    color: white;
+    background-color: red;
+}
+.logo-container b{
+    font-size: 1.7rem;
+    line-height: 30px;
+    color: rgb(255, 3, 3);
+    background-color: rgb(240,240,240);
 }
 
 
@@ -134,6 +145,7 @@ header{
 .active-sub-ul:hover .sub-ul{
     display: block;
 }
+
 .search-container{
     position: relative;
     display: flex;
@@ -190,7 +202,7 @@ header{
 .background{
     margin-top:25px;
     background-image: url(/imgs/BACKGROUND.jpg);
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -262,13 +274,16 @@ header{
     top: 210px;
     left: 30px;
 }
-.button-commande button{
+.button-commande button,.container-qtt-button button{
     background-color: #EE8434;
     border: none;
     padding: 10px;
     width: 230px;
-    height: 36px;
     border-radius: 25px;
+}
+.button-commande a,.container-qtt-button a{
+    text-decoration: none;
+    height: 36px;
     color: white;
     font-family: 'poppins';
 }
@@ -334,13 +349,13 @@ footer{
     align-items: center;
     width: 36px;
     height: 36px;
-    border: 1px solid rgba(255, 255, 255, 0.699);
+    border: 1px solid #00bfb259;
     padding: 1px;
     border-radius: 2px;
 }
 .icon i{
     font-size: 3rem;
-    color: #EE8434;
+    color: #00bfb3;
 }
 .info h1{
     color: white;
@@ -348,7 +363,7 @@ footer{
     font-size: 1.7rem;
 }
 .info h2{
-    color:#EE8434 ;
+    color:#00bfb3 ;
     font-weight: 400;
     font-size: 1.5rem;
 }
@@ -389,7 +404,7 @@ footer{
     width: 15%;
     height: 100%;
     border-radius: 10px;
-    background-color: #EE8434;
+    background-color: #00bfb3;
     border: none;
     font-family: 'poppins',sans-serif;
     color: white;
@@ -434,7 +449,7 @@ footer{
     display:flex;
     flex-direction: column;
     text-decoration: none;
-    color: #EE8434;
+    color: #00bfb3;
     font-size: 1.6rem;
 }
 .contact-info a:hover,.contact-info h2:hover{
@@ -547,3 +562,59 @@ header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.397);
 }
 
+/**** Checkout page ****/
+.checkoutflex1 img{
+    width: 100%;
+
+}
+.global-flex-checkout{
+    margin: 0 10%;
+    display: flex;
+}
+.checkoutflex1{
+
+    width: 50%;
+}
+.container-other-photo{
+    display: flex;
+}
+.container-other-photo{
+    width: 100px;
+    height: 90px;
+    background-color: red;
+}
+.container-other-photo img{
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.144);
+}
+.checkoutflex1 h5{
+    margin-top: 25px;
+    font-size: 3rem;
+}
+.checkoutflex1 span{
+    padding: 40px 0;
+    font-size: 2.4rem
+}
+.container-qtt-button{
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 8%;
+    font-size: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 25px;
+    border: none;
+    outline-style: none;
+}
+.container-qtt-button input{
+    border-radius: 8px;
+    padding: 0 5px;
+    width: 40px;
+    height: 30px;
+    font-size: 2.5rem;
+    border: none;
+    margin-left: 25px;
+}
