@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 html{
     background-color: #023436;
@@ -268,7 +269,6 @@ header{
     font-size: 1.2rem;
 }
 .button-commande{
-    
     display: none;
     position: absolute;
     top: 210px;
@@ -286,6 +286,11 @@ header{
     height: 36px;
     color: white;
     font-family: 'poppins';
+}
+.button-commande button{
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
 }
 .container-product-global:hover .button-commande{
     display: block; 
@@ -349,13 +354,13 @@ footer{
     align-items: center;
     width: 36px;
     height: 36px;
-    border: 1px solid #00bfb259;
+    border: 1px solid #eb7419;
     padding: 1px;
     border-radius: 2px;
 }
 .icon i{
     font-size: 3rem;
-    color: #00bfb3;
+    color: #b3560e;
 }
 .info h1{
     color: white;
@@ -363,7 +368,7 @@ footer{
     font-size: 1.7rem;
 }
 .info h2{
-    color:#00bfb3 ;
+    color:#eb7419 ;
     font-weight: 400;
     font-size: 1.5rem;
 }
@@ -379,7 +384,7 @@ footer{
     align-items: center;
     padding: 2px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 30px;
     border: 1px solid #000000;
 }
 .email-newsletter-input span:hover{
@@ -404,7 +409,7 @@ footer{
     width: 15%;
     height: 100%;
     border-radius: 10px;
-    background-color: #00bfb3;
+    background-color: #ff7811;
     border: none;
     font-family: 'poppins',sans-serif;
     color: white;
@@ -449,7 +454,7 @@ footer{
     display:flex;
     flex-direction: column;
     text-decoration: none;
-    color: #00bfb3;
+    color: #ff770f;
     font-size: 1.6rem;
 }
 .contact-info a:hover,.contact-info h2:hover{
@@ -472,7 +477,7 @@ footer{
     font-weight: 500;
 }
 .email-newsletter-input button:hover{
-    background-color: #b3560e;
+    background-color: #df6b13;
 }
 
 
