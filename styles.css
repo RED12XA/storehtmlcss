@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
 }
 html{
     background-color: #023436;
@@ -150,75 +151,67 @@ header{
 }
 
 .search-container{
-    position: relative;
     display: flex;
-    align-items: center;
-    width: 30%;
-}
-.search-container span{
-    position: relative;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    border: 1.5px solid rgba(0, 0, 0, 0.158);
-    width: 74%;
-    height: 30px;
-    overflow: hidden;
-}
-.search-container span:hover{
-    border: 1.5px solid #EE8434;
-    transition: 0.5s ease-in-out;
-}
-.search-container span:hover i{
-    color: #000000;
-    transition: 0.5s;
-}
-.search-container input{
-    width: 100%;
-    height: 100%;
-    font-family: 'poppins',sans-serif;
-    padding: 0 4px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    background: transparent;
-    outline: none;
-    border: none;
-}
-.search-container input::placeholder{
-    font-size: 1.4rem;
+    margin-right: 25px;
 }
 .search-content{
+    display: flex;
+}
+.search-content span,button,input{
+    border: none;
+    outline: none;
+}
+.search-content span{
+    display: flex;
+    text-align: center;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid #00000034;
+    transition: 1s;
+    overflow: hidden;
+}
+#search{
+    display: none;
+}
 
+.search-content span:hover{
+    border: 1px solid #eb74197c;
+}
+.search-content input{
+    padding: 0 2px;
+    margin-left: 3px;
+    height: 100%;
+    width: 250px;
+    font-weight: 500;
 }
 .search-content button{
-    position: absolute;
-    right: 0;
-    height: 40px;
+    background-color: #eb7419;
     width: 45px;
-    background-color: #1118200a;
-    border: none;
+    height: 100%;
+    
 }
-.search-content button a i:hover{
-    color: #023436;
+.search-content i{
+    font-size: 1.7rem;
+    color: white;
 }
+.search-content{
+    margin-right: 30px
+}
+
 
 .panier-shop{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    position: absolute;
-    right: 50px;
+    margin-right: 25px;
 }
-#menu{   /** for mobile **/
+#menu-1{   /** for mobile **/
     display: none;
 }
 
-.search-container i{
-    font-size: 1.9rem;
-    color: black;
-    margin-left: 2px;
-}
+
+
 .panier-shop i{
     cursor: pointer;
     font-size: 2.5rem;

@@ -16,38 +16,46 @@
     .global-container-header1,.global3items,.global-social-media{
         display: none;
     }
-    header{
-        margin-top: -50px;  /** this is the changed **/ 
-        height: 150px;
-    }
+
     .logo-container{
         width: 20%;
     }
-    .menu_list{
-        display: none;
-    }
-    .search-container{
-        width: 100%;
-    }
-    .search-container span{
-        padding: 1px 2px;
-        height: 36px;
-        border-radius: 5px;
-        width: 100%;
 
+    .menu_list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(17,24,32);
+        z-index: 999;
+    }
+    .menu_list li{
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 90%;   
+    }
+    .menu_list li a{
+        color: white;
+    }
+
+    #search{
+        display: block;
     }
     .search-content{
-        position: absolute;
-        top: 45px;
-        right: 50px;
-        width: 20%;
+        display: none;
     }
-
-    #menu{
+    #menu-1{
         display: flex;
         flex-direction: column;
         font-size: 3.5rem;
         margin-right: -40px;
+    }
+    .panier-shop i{
+        font-size: 3.2rem
     }
 
     .background{
@@ -73,8 +81,6 @@
     .container-product{
         margin: 0;
         padding: 0;
-        
-        
     }
     .container-product-global{
         margin-top: 40px;
@@ -137,8 +143,10 @@
         
     }
 
+    .menu_list{
+        display: none; /**wait for fix the problem **/
+    }
 
-    
 
 
 

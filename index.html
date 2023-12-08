@@ -39,7 +39,8 @@
     </div>
     <div class="nav-container">
         <nav>
-            <ul class="menu_list">
+            <ul  class="menu_list">
+                <li><a href=#></a>
                 <li id="selected1"><a href="index.html">Accueil</a></li>
                 <li class="active-sub-ul"><a href="#">Pc portable</a>
                     <i class='bx bx-chevron-down'></i>
@@ -60,13 +61,19 @@
         </nav>
     </div>
     <div class="search-container">
-        <span class="search-content">
+        <div class="search-content">
+            <span>
             <input type="text" placeholder="Rechercher sur...">
+            
             <button><a href="#"><i class='bx bx-search-alt-2'></i></a></button>
         </span>
+        </div>
         <div class="panier-shop">
-            <i class='bx bxs-cart'></i>
-            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-search-alt-2' id="search"></i>
+            <i class='bx bxs-cart' ></i>
+            <button class="toggle-menu">
+                <i class='bx bx-menu' id="menu-1"></i>
+            </button>
         </div>
         
     </div>
@@ -433,7 +440,5 @@
     <br>
     
 </div>
-
-
 </body>
 </html>
