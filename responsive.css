@@ -7,6 +7,12 @@
         margin: 0 0;
         height: 0;
     }
+    .logo-container b{
+        font-size: 1.7rem;
+    }
+    .logo-container span{
+        font-size: 1.7rem;
+    }
     .global-container-header1,.global3items,.global-social-media{
         display: none;
     }
@@ -20,13 +26,14 @@
         display: none;
     }
     .search-container{
-        width: 65%;
-        
+        width: 69%;
     }
     .search-container span{
-        padding: 2px;
+        padding: 0;
         height: 32px;
-        border-radius: 2px;
+        border-radius: 5px;
+        width: 67%;
+
     }
     #menu{
         display: flex;
@@ -82,11 +89,13 @@
     }
     .button-commande{
         top: 140px;
-        left: 14px;
-
+        left: 25px;
     }
     .button-commande button{
-        width: 150px;
+        padding: 0;
+        width: 130px;
+        height: 25px;
+
     }
     .discount-onsale{
         width: 38px;
@@ -95,7 +104,42 @@
     .flex{
         display: none;
     }
+
+    /**for mobile footer**/
+    .mobile{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile nav{
+        padding: 5%;
+    }
+    .mobile nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        transition: 0.9s;
+    }
     
+    .mobile li{
+        margin-bottom: 10px;
+        
+    }
+    #line-box{
+        display: none;
+    }
+    .mobile li:hover a{
+        color: #eb7419;
+        text-decoration: underline;
+        
+    }
+
+
+    
+
+
+
+
 
 
 
