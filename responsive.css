@@ -32,7 +32,7 @@
         background-color: rgb(17,24,32);
         z-index: 999;
     }
-    #selected1{
+    #selected-frist-child{
         margin-top: 40px;
     }
     .sub-ul{
@@ -186,6 +186,33 @@
     .active-sub-ul i{
         color: white;
     }
+
+
+    /*** Contact Page ****/
+    .global-info-contact-flex{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+    }
+    .flex1{
+        width: 100%;
+        padding: 10px;
+    }
+    .maps-contact{
+        margin: 0;
+    }
+    .iframe-maps{
+        padding: 0;
+        height: 100%;
+    }
+    .iframe-maps iframe{
+        width: 90%;
+        height: 250px;
+    }
+
+    
+
 
 
 

@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mobile-screen.css" media="(max-width: 600px)" />
     <link rel="stylesheet" href="animation.css"/>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 <body>
@@ -38,8 +38,9 @@
     </div>
     <div class="nav-container">
         <nav>
-            <ul class="menu_list">
-                <li><a href="index.html">Accueil</a></li>
+            <input id="burger" type="checkbox">
+            <ul  class="menu_list">
+                <li id="selected-frist-child"><a href="index.html">Accueil</a></li>
                 <li class="active-sub-ul"><a href="#">Pc portable</a>
                     <i class='bx bx-chevron-down'></i>
                 <ul class="sub-ul">
@@ -59,15 +60,20 @@
         </nav>
     </div>
     <div class="search-container">
-        <span>
-            <i class='bx bx-search-alt-2'></i>
-            <input type="text" placeholder="Rechercher des produits...">
+        <div class="search-content">
+            <span>
+            <input type="text" placeholder="Rechercher sur...">
+            
+            <button><a href="#"><i class='bx bx-search-alt-2'></i></a></button>
         </span>
-        <div class="panier-shop">
-            <i class='bx bxs-cart'></i>
         </div>
-        
-    </div>
+        <div class="panier-shop">
+            <i class='bx bx-search-alt-2' id="search"></i>
+            <i class='bx bxs-cart' ></i>
+            <button class="toggle-menu">
+                <i class='bx bx-menu' id="menu-1"></i>
+            </button>
+        </div>
 </header>
 
 <section>
@@ -184,6 +190,19 @@
             <a href="">Livraison</a>
         </div>
 
+</footer>
+
+<footer class="mobile">
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="condition.html">Condition General</a></li>
+            <li><a href="pconf.html">Politique de confidentialité</a></li>
+            <li><a href="livraison.html">Livraison</a></li>
+        </ul>
+    </nav>
+    <span id="line-box"><span id="line"></span></span>
 </footer>
 <div class="dev-info">
     <h3>Développé par : ESSBAYI Rida</h3>
