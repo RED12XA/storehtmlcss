@@ -213,7 +213,7 @@ header{
 /*background image */
 .background{
     margin-top:10px;
-    background-image: url(imgs/BACKGROUND.jpg);
+    background-image: url("https://i.postimg.cc/28gRmtDR/BACKGROUND.jpg");
     background-position: bottom;
     background-size: cover;
     width: 100%;
