@@ -156,29 +156,23 @@ header{
     width: 30%;
 }
 .search-container span{
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-radius: 50px;
+    border-radius: 5px;
     border: 1.5px solid rgba(0, 0, 0, 0.158);
-    width: 57%;
+    width: 74%;
+    height: 30px;
+    overflow: hidden;
 }
 .search-container span:hover{
-    width: 90%;
     border: 1.5px solid #EE8434;
     transition: 0.5s ease-in-out;
 }
-
 .search-container span:hover i{
-    color: #e0792a;
+    color: #000000;
     transition: 0.5s;
 }
-
-
-.search-container span:hover + .panier-shop{
-    display: none;
-}
-
 .search-container input{
     width: 100%;
     height: 100%;
@@ -190,6 +184,24 @@ header{
     outline: none;
     border: none;
 }
+.search-container input::placeholder{
+    font-size: 1.4rem;
+}
+.search-content{
+
+}
+.search-content button{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 45px;
+    background-color: #1118200a;
+    border: none;
+}
+.search-content button a i:hover{
+    color: #023436;
+}
+
 .panier-shop{
     display: flex;
     justify-content: space-between;
@@ -405,7 +417,7 @@ footer{
     padding: 2px;
     width: 100%;
     border-radius: 30px;
-    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 .email-newsletter-input span:hover{
     border-bottom: 1px solid #eb7419;

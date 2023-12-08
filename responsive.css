@@ -17,7 +17,8 @@
         display: none;
     }
     header{
-        height: 70px;
+        margin-top: -50px;  /** this is the changed **/ 
+        height: 150px;
     }
     .logo-container{
         width: 20%;
@@ -26,27 +27,29 @@
         display: none;
     }
     .search-container{
-        width: 69%;
+        width: 100%;
     }
     .search-container span{
-        padding: 0;
-        height: 32px;
+        padding: 1px 2px;
+        height: 36px;
         border-radius: 5px;
-        width: 67%;
+        width: 100%;
 
     }
+    .search-content{
+        position: absolute;
+        top: 45px;
+        right: 50px;
+        width: 20%;
+    }
+
     #menu{
         display: flex;
         flex-direction: column;
         font-size: 3.5rem;
         margin-right: -40px;
     }
-    .search-container span:hover{
-        width: 95%;
-    }
-    .search-container span:hover + .panier-shop{
-        display: none;
-    }
+
     .background{
         position: relative;
         background-position: center right;
