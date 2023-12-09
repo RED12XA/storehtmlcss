@@ -193,11 +193,12 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
+        padding: 0 10px;
 
     }
     .flex1{
-        width: 100%;
-        padding: 10px;
+        width: 95%;
+        padding: 0px;
     }
     .maps-contact{
         margin: 0;
@@ -209,6 +210,9 @@
     .iframe-maps iframe{
         width: 90%;
         height: 250px;
+    }
+    .flex1 span{
+        margin-right: 90px;
     }
 
     
