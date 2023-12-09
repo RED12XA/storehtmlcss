@@ -6,9 +6,8 @@
     <title>My Store</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="mobile-screen.css" media="(max-width: 600px)" />
     <link rel="stylesheet" href="animation.css"/>
-
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="global-container-header1">   
@@ -33,11 +32,14 @@
     </div> 
 <header>
     <div class="logo-container">
+        <a href="index.html">
         <span>RES</span><b>COMPANY</b>
+    </a>
     </div>
     <div class="nav-container">
         <nav>
-            <ul class="menu_list">
+            <input id="burger" type="checkbox">
+            <ul  class="menu_list">
                 <li ><a href="index.html">Accueil</a></li>
                 <li class="active-sub-ul"><a href="#">Pc portable</a>
                     <i class='bx bx-chevron-down'></i>
@@ -58,13 +60,24 @@
         </nav>
     </div>
     <div class="search-container">
-        <span>
-            <i class='bx bx-search-alt-2'></i>
-            <input type="text" placeholder="Rechercher des produits...">
+        <div class="search-content">
+            <span>
+            <input type="text" placeholder="Rechercher sur...">
+            
+            <button><a href="#"><i class='bx bx-search-alt-2'></i></a></button>
         </span>
+        </div>
         <div class="panier-shop">
-            <i class='bx bxs-cart'></i>
+            <i class='bx bx-search-alt-2' id="search"></i>
+            <i class='bx bxs-cart' ></i>
+            <button class="toggle-menu">
+                <i class='bx bx-menu' id="menu-1"></i>
+            </button>
         </div>
         
     </div>
 </header>
+
+<center>
+    <span id="building"><i class='bx bx-code-alt'></i>En Construction</span>
+</center>

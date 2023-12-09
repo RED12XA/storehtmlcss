@@ -678,3 +678,11 @@ header{
 }
 
 /*** fix this pc portable icon and text space beetwen **/
+#building{
+    padding: 5px;
+    font-size: 5rem;
+    border-radius: 50px;
+    background-color: #000000;
+    color: white;
+    letter-spacing: 2px;
+}

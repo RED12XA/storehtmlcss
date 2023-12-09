@@ -215,6 +215,23 @@
         margin-right: 90px;
     }
 
+
+    /** brands page fix **/ 
+    .container-option{
+        margin: 0;
+    }
+    .global2option{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: -30px;
+    }
+    .option1{
+        display: none;
+    }
+    #building{
+        font-size: 2rem;
+    }
+
     
 
 
