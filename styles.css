@@ -11,9 +11,13 @@ html{
     font-size: 10px;
     text-decoration: none;
     list-style: none;
+    
 }
 body{
     background-color: #ffffff;
+
+
+
 }
 body > .global-container-header1{
     margin: 0 10%;
@@ -152,7 +156,7 @@ header{
 
 .search-container{
     display: flex;
-    margin-right: 25px;
+
 }
 .search-content{
     display: flex;
@@ -620,31 +624,49 @@ header{
     margin: 0 10%;
     display: flex;
 }
+/**update checkout**/
+.product-images{
+    display: flex;  
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
 .checkoutflex1{
-
+    border: 1px solid black;
     width: 50%;
 }
 .container-other-photo{
     display: flex;
+    flex-direction: row;
 }
 .container-other-photo{
-    width: 100px;
-    height: 90px;
-    background-color: red;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.left , .right{
+    position: absolute;
+    font-size: 3rem;
+    color: #f77715;
+    cursor: pointer;
+}
+.left{
+    bottom: 40px;
+    left: 5px;
+}
+.right{
+    bottom: 40px;
+    right: 5px;
 }
 .container-other-photo img{
-    width: 100%;
-    height: 100%;
-    border: 0.5px solid rgba(0, 0, 0, 0.144);
+    width: 130px;
+    height: 130px;
+    border-right: 0.5px solid rgba(0, 0, 0, 0);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.144);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.199);
+    border-top: 0.5px solid rgba(0, 0, 0, 0.055);
 }
-.checkoutflex1 h5{
-    margin-top: 25px;
-    font-size: 3rem;
-}
-.checkoutflex1 span{
-    padding: 40px 0;
-    font-size: 2.4rem
-}
+
+
 .container-qtt-button{
     gap: 10px;
     width: 100%;
@@ -657,6 +679,11 @@ header{
     height: 25px;
     border: none;
     outline-style: none;
+}
+.global-checkoutflex{
+    display: flex;
+    flex-direction: column;
+
 }
 .container-qtt-button input{
     border-radius: 8px;
