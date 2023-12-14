@@ -25,6 +25,9 @@ body > .global-container-header1{
     align-items: center;
     height: 40px;
 }
+.global-container-header1 span{
+    font-size: 1.6rem;
+}
 .global3items{
     padding: 0 5px;
     width: 100%;
@@ -616,13 +619,41 @@ header{
 }
 
 /**** Checkout page ****/
+.checkoutflex1{
+    width: 50%;
+}
 .checkoutflex1 img{
     width: 100%;
-
 }
 .global-flex-checkout{
     margin: 0 10%;
     display: flex;
+}
+
+.global-checkoutflex{
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.global-checkoutflex h5,.global-checkoutflex span,.global-checkoutflex del{
+    font-size: 2.3rem;
+}
+.description-product #description-product{
+    font-size: 1.9rem;
+}
+.price-div{
+    display: flex;
+    gap: 15px;
+
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+number{
+
 }
 /**update checkout**/
 .product-images{
@@ -631,10 +662,7 @@ header{
     width: 100%;
     position: relative;
 }
-.checkoutflex1{
-    border: 1px solid black;
-    width: 50%;
-}
+
 .container-other-photo{
     display: flex;
     flex-direction: row;
@@ -657,6 +685,7 @@ header{
     bottom: 40px;
     right: 5px;
 }
+
 .container-other-photo img{
     width: 130px;
     height: 130px;
@@ -668,38 +697,46 @@ header{
 
 
 .container-qtt-button{
-    gap: 10px;
+    gap: 5px;
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
-    width: 8%;
     font-size: 2.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 25px;
     border: none;
     outline-style: none;
 }
-.global-checkoutflex{
-    display: flex;
-    flex-direction: column;
 
-}
 .container-qtt-button input{
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 0 5px;
     width: 40px;
     height: 30px;
     font-size: 2.5rem;
-    border: none;
-    margin-left: 25px;
+    border: 1px solid rgba(95, 95, 95, 0.404);
+}
+#add-to-buy-button{
+    background-color: transparent;
+    border: 1px solid #EE8434;
+    width: 200px;
+    transition: 0.3s;
+}
+#add-to-buy-button a,#add-to-buy-button{
+    color: black;
+}
+#add-to-buy-button:hover{
+    background-color: #EE8434;
+}
+#add-to-buy-button a:hover{
+    color: white;
 }
 
-/*** for mobile footer**/
+/*** for mobile footer this class mobile show only in**/
 .mobile{
     display: none;
 }
-/*** burger tricks ***/ 
+/*** burger menu tricks ***/ 
 .nav-container > nav > input{
     display: none;
 }
